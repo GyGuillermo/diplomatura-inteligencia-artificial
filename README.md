@@ -29,15 +29,25 @@ Desarrollar materiales y prototipos por módulo (M6-M9), apoyados en agentes esp
 3. Agregar checklist de publicación por módulo.
 4. Definir convención de nombres para assets y notas.
 
-## Git workflow recomendado
+## Como guardar cambios en GitHub
+Cada vez que quieras guardar tu trabajo en GitHub, usá estos 3 comandos:
+
 ```bash
-# traer cambios
- git pull
+git add .
+git commit -m "descripcion corta del cambio"
+git push
+```
 
-# trabajar y versionar
- git add .
- git commit -m "feat: avance módulo M6"
+Ejemplo:
 
-# subir
- git push
+```bash
+git add .
+git commit -m "actualizo web del modulo 6"
+git push
+```
+
+Si alguna vez querés ver si hay cambios sin guardar:
+
+```bash
+git status
 ```
