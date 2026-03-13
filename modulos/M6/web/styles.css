@@ -1,0 +1,333 @@
+:root {
+  --bg-color: #0f1115;
+  --text-color: #e0e0e0;
+  --core: #00d4ff;
+  --cv: #ff007a;
+  --bio: #ffaa00;
+  --interview: #9d4edd;
+  --email: #4cc9f0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Inter, -apple-system, sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+#nebulaBg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+svg {
+  position: relative;
+  z-index: 1;
+}
+
+#ui-layer {
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+#ui-layer h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: var(--core);
+}
+
+#ui-layer p {
+  margin: 5px 0;
+  font-size: 12px;
+  opacity: 0.55;
+  text-transform: uppercase;
+}
+
+#interactionHint {
+  max-width: 420px;
+  opacity: 0.72;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+#header-logo {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+#header-logo img {
+  display: block;
+  max-width: 180px;
+  width: 24vw;
+  min-width: 110px;
+  height: auto;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.45));
+}
+
+#slide-controls {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 12;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: rgba(15,17,21,0.8);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 10px;
+  padding: 6px 8px;
+}
+
+button.secondary {
+  background: #1c2d53;
+  color: #d8e7ff;
+  border: 1px solid #39568d;
+  border-radius: 8px;
+  padding: 5px 9px;
+  cursor: pointer;
+}
+
+button.secondary:hover {
+  background: #274178;
+}
+
+#slideIndicator { font-size: 12px; opacity: 0.85; min-width: 40px; text-align:center; }
+
+#legend {
+  position: absolute;
+  bottom: 16px;
+  left: 18px;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+  background: rgba(15, 17, 21, 0.75);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 11px;
+}
+#legend span { display:flex; align-items:center; gap:6px; }
+#legend i { width:10px; height:10px; border-radius:50%; display:inline-block; }
+
+#tooltip {
+  position: absolute;
+  visibility: hidden;
+  padding: 8px 10px;
+  background: rgba(15, 17, 21, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  font-size: 11px;
+  line-height: 1.25;
+  max-width: 180px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  pointer-events: none;
+}
+
+#statusBadge {
+  position: absolute;
+  top: 74px;
+  right: 18px;
+  z-index: 13;
+  padding: 8px 12px;
+  background: rgba(15, 17, 21, 0.88);
+  border: 1px solid rgba(127, 232, 255, 0.28);
+  border-radius: 999px;
+  color: #dff8ff;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+}
+
+.status-hidden {
+  display: none;
+}
+
+#detailPanel {
+  position: absolute;
+  top: 90px;
+  left: 90px;
+  width: 420px;
+  max-height: 62vh;
+  overflow: auto;
+  background: rgba(15, 17, 21, 0.9);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 12px;
+  padding: 12px;
+  z-index: 14;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  backdrop-filter: blur(4px);
+  transition: left 120ms ease-out, top 120ms ease-out;
+}
+
+.panel-hidden { display: none; }
+.panel-head { display:flex; justify-content:space-between; align-items:center; gap:8px; }
+.panel-head h3 { margin: 0; font-size: 1rem; color: #7fe8ff; }
+#panelGroup { margin: 8px 0 6px; font-size: .8rem; text-transform: uppercase; opacity: .75; }
+#panelSource {
+  margin: 0 0 8px;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: #98b4c7;
+}
+#panelNote { margin: 0; font-size: .92rem; line-height: 1.4; }
+#panelContent {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+#panelContent h1,
+#panelContent h2,
+#panelContent h3 {
+  margin: 0 0 8px;
+  color: #e7f7ff;
+}
+
+#panelContent h1 { font-size: 1rem; }
+#panelContent h2 { font-size: 0.95rem; margin-top: 14px; }
+#panelContent h3 { font-size: 0.9rem; margin-top: 12px; }
+
+#panelContent p,
+#panelContent ul,
+#panelContent pre {
+  margin: 0 0 10px;
+}
+
+#panelContent ul {
+  padding-left: 18px;
+}
+
+#panelContent li {
+  margin-bottom: 6px;
+}
+
+#panelContent code {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.84rem;
+}
+
+#panelContent pre {
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow-x: auto;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+#panelContent strong {
+  color: #f3fbff;
+}
+
+.node-label {
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  fill: #eef7ff;
+  pointer-events: none;
+  stroke: none;
+  text-shadow:
+    0 0 2px rgba(5, 8, 16, 0.95),
+    0 1px 3px rgba(5, 8, 16, 0.9),
+    0 0 10px rgba(5, 8, 16, 0.35);
+}
+
+.node-label tspan {
+  dominant-baseline: hanging;
+}
+
+.link-glow {
+  stroke: #7fe8ff !important;
+  stroke-width: 2.8 !important;
+  stroke-opacity: 0.95 !important;
+  filter: drop-shadow(0 0 6px rgba(69, 208, 255, 0.9));
+}
+
+@media (max-width: 900px) {
+  #ui-layer {
+    top: 14px;
+    left: 16px;
+    max-width: calc(100vw - 32px);
+  }
+
+  #ui-layer h1 {
+    font-size: 18px;
+    max-width: 70vw;
+  }
+
+  #header-logo img {
+    width: 34vw;
+    min-width: 88px;
+  }
+
+  #slide-controls {
+    top: auto;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  #statusBadge {
+    top: auto;
+    right: 16px;
+    bottom: 64px;
+  }
+
+  #legend {
+    left: 16px;
+    right: 16px;
+    bottom: 64px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  #detailPanel {
+    left: 16px !important;
+    right: 16px;
+    top: auto !important;
+    bottom: 118px;
+    width: auto;
+    max-height: 34vh;
+  }
+
+  .node-label {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 560px) {
+  #ui-layer h1 {
+    font-size: 16px;
+    max-width: 64vw;
+  }
+
+  #ui-layer p {
+    font-size: 11px;
+  }
+
+  #interactionHint {
+    max-width: 72vw;
+  }
+
+  #header-logo {
+    top: 14px;
+  }
+
+  .node-label {
+    font-size: 8px;
+  }
+}

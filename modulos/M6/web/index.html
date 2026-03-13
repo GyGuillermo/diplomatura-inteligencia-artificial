@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diplomatura IA | Obsidian Graph Slides</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="ui-layer">
+    <h1 id="slideTitle">Diplomatura IA (M6–M9)</h1>
+    <p id="slideSubtitle">Obsidian global · grafo emergente</p>
+  </div>
+
+  <div id="header-logo">
+    <img src="./imagenes/logo EGCI.jpg" alt="Logo EGCI" onerror="this.style.display='none'" />
+  </div>
+
+  <div id="slide-controls">
+    <button id="prevSlide" class="secondary" type="button" aria-label="Slide anterior" title="Slide anterior">◀</button>
+    <span id="slideIndicator" aria-live="polite">0 / 1</span>
+    <button id="nextSlide" class="secondary" type="button" aria-label="Slide siguiente" title="Slide siguiente">▶</button>
+  </div>
+
+  <div id="legend" aria-label="Leyenda de grupos"></div>
+  <div id="statusBadge" class="status-hidden" aria-live="polite">Cargando visualización...</div>
+  <div id="tooltip" role="tooltip"></div>
+
+  <aside id="detailPanel" class="panel-hidden" aria-live="polite">
+    <div class="panel-head">
+      <h3 id="panelTitle">Detalle del nodo</h3>
+    </div>
+    <p id="panelGroup"></p>
+    <p id="panelSource"></p>
+    <p id="panelNote">Hacé click en un nodo para ver el contenido acá sin tapar el grafo.</p>
+    <div id="panelContent"></div>
+  </aside>
+
+  <script src="./nebula-bg.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

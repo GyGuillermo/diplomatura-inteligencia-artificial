@@ -1,0 +1,203 @@
+{
+  "nodes": [
+    {
+      "id": "MOC - ChatGPT en la Preparación de Entrevistas de Trabajo",
+      "group": "core",
+      "radius": 20,
+      "note": "Hub central del Módulo 6 para empleabilidad, branding profesional y uso de LLMs."
+    },
+    {
+      "id": "Optimización de Currículums con IA",
+      "group": "cv",
+      "radius": 14,
+      "file": "importancia-curriculum.md",
+      "note": "La IA convierte el CV en un documento dinámico y personalizado para cada vacante."
+    },
+    {
+      "id": "Pasos Críticos para un CV Eficaz",
+      "group": "cv",
+      "radius": 13,
+      "file": "pasos-claves-curriculum.md",
+      "note": "Investigar puesto y empresa antes de redactar mejora el ajuste del CV."
+    },
+    {
+      "id": "Estructura Atómica del Currículum",
+      "group": "cv",
+      "radius": 12,
+      "note": "Descomponer el CV en bloques editables permite iterar perfil, experiencia, skills y logros."
+    },
+    {
+      "id": "Personalización de Perfil por Audiencia",
+      "group": "bio",
+      "radius": 12,
+      "file": "ejemplo-perfil-juan-perez.md",
+      "note": "La narrativa profesional debe adaptarse al rol, industria y lector objetivo."
+    },
+    {
+      "id": "Optimización para ATS",
+      "group": "cv",
+      "radius": 12,
+      "file": "optimizacion-ats.md",
+      "note": "El CV debe ser legible para humanos y ATS mediante keywords y formato simple."
+    },
+    {
+      "id": "Diseño de Biografías Profesionales Impactantes",
+      "group": "bio",
+      "radius": 14,
+      "file": "desarrollo-biografias-impactantes.md",
+      "note": "Una bio efectiva comunica propuesta de valor en 100-200 palabras."
+    },
+    {
+      "id": "Uso de Verbos de Acción",
+      "group": "bio",
+      "radius": 11,
+      "note": "Los verbos de acción elevan claridad, energía y percepción de impacto en bios y CVs."
+    },
+    {
+      "id": "Métricas de Impacto",
+      "group": "bio",
+      "radius": 11,
+      "note": "Cuantificar resultados vuelve creíbles los logros y fortalece la propuesta profesional."
+    },
+    {
+      "id": "Estrategias de Preparación para Entrevistas",
+      "group": "interview",
+      "radius": 14,
+      "file": "personalizacion-entrevistas.md",
+      "note": "La preparación contextual une investigación, logros y práctica de respuestas."
+    },
+    {
+      "id": "Técnica STAR para Respuestas Perspicaces",
+      "group": "interview",
+      "radius": 14,
+      "file": "tecnica-star.md",
+      "note": "STAR organiza respuestas conductuales con evidencia concreta de desempeño."
+    },
+    {
+      "id": "Investigación Previa del Empleador",
+      "group": "interview",
+      "radius": 12,
+      "file": "analisis-oferta-laboral.md",
+      "note": "Entender empresa y vacante permite responder con mejor contexto y relevancia."
+    },
+    {
+      "id": "Redacción de Correos Electrónicos Profesionales",
+      "group": "email",
+      "radius": 14,
+      "file": "redaccion-correos-profesionales.md",
+      "note": "La comunicación escrita debe ser breve, clara y orientada a una CTA concreta."
+    },
+    {
+      "id": "Protocolo de Seguimiento Post-Contacto",
+      "group": "email",
+      "radius": 13,
+      "file": "pasos-correos.md",
+      "note": "El seguimiento ideal ocurre entre 3 y 5 días con tono cortés y profesional."
+    },
+    {
+      "id": "Imagen Corporativa Personal",
+      "group": "email",
+      "radius": 11,
+      "file": "ejemplo-email-empleador.md",
+      "note": "Cada correo debe reforzar una marca personal coherente con el perfil profesional."
+    },
+    {
+      "id": "Rol de Experto en Recursos Humanos para LLMs",
+      "group": "prompt",
+      "radius": 14,
+      "file": "prompts-base-chatgpt.md",
+      "note": "Asignar un rol experto al modelo mejora la calidad de CVs, bios, entrevistas y emails."
+    },
+    {
+      "id": "Simulación de Entrevistas y Feedback con IA",
+      "group": "prompt",
+      "radius": 13,
+      "file": "preguntas-reflexivas.md",
+      "note": "La IA puede simular entrevistas, detectar vacíos y devolver feedback accionable."
+    },
+    {
+      "id": "IA como Facilitador de Empleo",
+      "group": "prompt",
+      "radius": 11,
+      "note": "La IA traduce experiencia y habilidades al lenguaje requerido por el mercado laboral."
+    }
+  ],
+  "links": [
+    {
+      "source": "MOC - ChatGPT en la Preparación de Entrevistas de Trabajo",
+      "target": "Optimización de Currículums con IA"
+    },
+    {
+      "source": "MOC - ChatGPT en la Preparación de Entrevistas de Trabajo",
+      "target": "Diseño de Biografías Profesionales Impactantes"
+    },
+    {
+      "source": "MOC - ChatGPT en la Preparación de Entrevistas de Trabajo",
+      "target": "Estrategias de Preparación para Entrevistas"
+    },
+    {
+      "source": "MOC - ChatGPT en la Preparación de Entrevistas de Trabajo",
+      "target": "Redacción de Correos Electrónicos Profesionales"
+    },
+    {
+      "source": "MOC - ChatGPT en la Preparación de Entrevistas de Trabajo",
+      "target": "Rol de Experto en Recursos Humanos para LLMs"
+    },
+    {
+      "source": "Optimización de Currículums con IA",
+      "target": "Pasos Críticos para un CV Eficaz"
+    },
+    {
+      "source": "Pasos Críticos para un CV Eficaz",
+      "target": "Estructura Atómica del Currículum"
+    },
+    {
+      "source": "Pasos Críticos para un CV Eficaz",
+      "target": "Optimización para ATS"
+    },
+    {
+      "source": "Optimización de Currículums con IA",
+      "target": "IA como Facilitador de Empleo"
+    },
+    {
+      "source": "Diseño de Biografías Profesionales Impactantes",
+      "target": "Personalización de Perfil por Audiencia"
+    },
+    {
+      "source": "Diseño de Biografías Profesionales Impactantes",
+      "target": "Uso de Verbos de Acción"
+    },
+    {
+      "source": "Diseño de Biografías Profesionales Impactantes",
+      "target": "Métricas de Impacto"
+    },
+    {
+      "source": "Estrategias de Preparación para Entrevistas",
+      "target": "Técnica STAR para Respuestas Perspicaces"
+    },
+    {
+      "source": "Estrategias de Preparación para Entrevistas",
+      "target": "Investigación Previa del Empleador"
+    },
+    {
+      "source": "Técnica STAR para Respuestas Perspicaces",
+      "target": "Simulación de Entrevistas y Feedback con IA"
+    },
+    {
+      "source": "Redacción de Correos Electrónicos Profesionales",
+      "target": "Protocolo de Seguimiento Post-Contacto"
+    },
+    {
+      "source": "Redacción de Correos Electrónicos Profesionales",
+      "target": "Imagen Corporativa Personal"
+    },
+    {
+      "source": "Rol de Experto en Recursos Humanos para LLMs",
+      "target": "Optimización de Currículums con IA"
+    },
+    {
+      "source": "Rol de Experto en Recursos Humanos para LLMs",
+      "target": "Simulación de Entrevistas y Feedback con IA"
+    }
+  ]
+}
